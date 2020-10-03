@@ -21,7 +21,7 @@ RUN mkdir -p /usr/include/mysql/ && wget https://raw.githubusercontent.com/paulf
 RUN mkdir -p /usr/include/mysql/server/ && wget https://raw.githubusercontent.com/paulfitz/mysql-connector-c/master/include/my_config.h -O /usr/include/mysql/my_config.h
 
 # Copy the file from your host to your current location.
-COPY src .
+COPY qrassh .
 
 # create user
 # assign ownership to user
