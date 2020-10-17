@@ -21,7 +21,7 @@ RUN mkdir -p /usr/include/mysql/ && wget https://raw.githubusercontent.com/paulf
 RUN mkdir -p /usr/include/mysql/server/ && wget https://raw.githubusercontent.com/paulfitz/mysql-connector-c/master/include/my_config.h -O /usr/include/mysql/my_config.h
 
 # Copy the file from your host to your current location.
-COPY qrassh .
+COPY src .
 
 # create user
 # assign ownership to user
@@ -35,7 +35,7 @@ RUN chown -R qrassh:qrassh /usr/include/mysql/
 
 USER qrassh
 RUN mkdir -p log && mkdir -p log/tty
-
-# run qrassh as user
+# run qrassh as user qrassh
 CMD ["bin/qrassh", "start"]
+# CMD ["tail", "-f", "/dev/null"]
 

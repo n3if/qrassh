@@ -14,7 +14,6 @@ services:
             - mysql_volume:/var/lib/mysql
             - ./mysql/init:/docker-entrypoint-initdb.d
 
-
     debian10qrassh:
         build:
             context: .
@@ -23,7 +22,6 @@ services:
             - "2222:2222"
         depends_on: 
             - mysql
-
 
 volumes:
     mysql_volume:
