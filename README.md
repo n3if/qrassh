@@ -1,6 +1,7 @@
 # Welcome to the qrassh GitHub repository - forked to run on docker-compose
 
-This is the official repository for the qrassh SSH and Telnet Honeypot effort.
+This is a fork for the qrassh SSH and Telnet Honeypot effort that allows to run
+it with docker compose.
 
 ## Requirements
 
