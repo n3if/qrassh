@@ -244,7 +244,7 @@ version = SSH-2.0-OpenSSH_6.0p1 Debian-4+deb7u2
 # (DEPRECATED: use listen_endpoints instead)
 #
 # (default: 2222)
-#listen_port = 2222
+listen_port = 22
 
 
 # Endpoint to listen on for incoming SSH connections.

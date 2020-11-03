@@ -19,7 +19,7 @@ services:
             context: .
             dockerfile: Dockerfile
         ports:
-            - "2222:2222"
+            - "22:22"
         depends_on: 
             - mysql
 
