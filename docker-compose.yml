@@ -18,6 +18,8 @@ services:
         build:
             context: .
             dockerfile: Dockerfile
+        networks:
+            - internet
         ports:
             - "22:22"
         depends_on: 
@@ -25,3 +27,7 @@ services:
 
 volumes:
     mysql_volume:
+
+networks:
+    internet:
+        external: true
