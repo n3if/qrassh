@@ -1,9 +1,7 @@
 # Welcome to the qrassh GitHub repository - forked to run on docker-compose
 
 This is a fork for the qrassh SSH and Telnet Honeypot effort that allows to run
-it with docker compose.
-
-## Requirements
+it with docker compose. The docker-compose service will listen on the public system interface on port 22 for live usage.
 
 Software required:
 
@@ -40,7 +38,7 @@ For Python dependencies, see requirements.txt
 * Simply clone the repo on an operating system and launch the "docker-compose up"
 command.
 
-* Connect to the honeypot as an attacker: `ssh root@localhost -p 2222`, input any pwd
+* Connect to the honeypot as an attacker: `ssh root@localhost`, input any pwd
 
 Currently, the logs are stored within the Debian container. Access it with a
 shell. There:
@@ -58,7 +56,3 @@ Hostname now is mysql (internal docker-compose configuration)
 * Consolidate log files in a single repository 
 * Add action mysql log
 * Move all functions from rassh to qrassh
-* Modification of listening interface to port 22:
-    ** qrassh.cfg.dist line 256
-    *** listen_endpoints = tcp:2222:interface=0.0.0.0
-* Open communications from outside the host system
