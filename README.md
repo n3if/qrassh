@@ -1,4 +1,4 @@
-# Welcome to the qrassh GitHub repository - forked to run on docker-compose
+# Fork of the qrassh repository - forked to run on docker-compose
 
 This is a fork for the qrassh SSH and Telnet Honeypot effort that allows to run
 it with docker compose. The docker-compose service will listen on the public system interface on port 22 for live usage.
