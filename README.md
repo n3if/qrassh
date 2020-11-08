@@ -15,11 +15,11 @@ For Python dependencies, see requirements.txt
 ## Files of interest:
 
 ### modify to suit docker-compose deployment
-* `qrassh/qrassh.cfg.dist` - Cowrie's configuration file. Default values can be found in `cowrie.cfg.dist`
-* `qrassh/data/fs.pickle` - fake filesystem
-* `dqrassh/ata/userdb.txt` - credentials allowed or disallowed to access the honeypot
-* `qrassh/dl/` - files transferred from the attacker to the honeypot are stored here
-* `qrassh/honeyfs/` - file contents for the fake filesystem - feel free to copy a real system here or use `bin/fsctl`
+* `src/qrassh/qrassh.cfg.dist` - Cowrie's configuration file. Default values can be found in `cowrie.cfg.dist`
+* `src/qrassh/data/fs.pickle` - fake filesystem
+* `src/qrassh/ata/userdb.txt` - credentials allowed or disallowed to access the honeypot
+* `src/qrassh/dl/` - files transferred from the attacker to the honeypot are stored here
+* `src/qrassh/honeyfs/` - file contents for the fake filesystem - feel free to copy a real system here or use `src/bin/fsctl`
 * `qrassh/log/qrassh.json` - transaction output in JSON format
 * `qrassh/log/qrassh.log` - log/debug output
 * `qrassh/log/tty/*.log` - session logs
@@ -38,7 +38,7 @@ For Python dependencies, see requirements.txt
 * Simply clone the repo on an operating system and launch the "docker-compose up"
 command.
 
-* Connect to the honeypot as an attacker: `ssh root@localhost`, input any pwd
+* Connect to the honeypot as an attacker: `ssh root@localhost`, input any pwd.
 
 Currently, the logs are stored within the Debian container. Access it with a
 shell. There:
